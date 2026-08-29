@@ -1,7 +1,8 @@
 name: Pre-release Node.js bridge
 
-on: workflow_dispatch
-
+on:
+  push:
+    branches: [main]
 jobs:
   build:
     name: Build
