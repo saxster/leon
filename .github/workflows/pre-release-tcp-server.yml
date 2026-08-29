@@ -1,7 +1,8 @@
 name: Pre-release TCP server
 
-on: workflow_dispatch
-
+on:
+  push:
+    branches: [main]
 env:
   PIPENV_PIPFILE: tcp_server/src
   PIPENV_VENV_IN_PROJECT: true
