@@ -1,7 +1,8 @@
 name: Pre-release Python bridge
 
-on: workflow_dispatch
-
+on:
+  push:
+    branches: [main]
 env:
   PIPENV_PIPFILE: bridges/python/src
   PIPENV_VENV_IN_PROJECT: true
